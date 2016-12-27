@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project>
+<epcis:EPCISDocument xmlns:epcis="urn:epcglobal:epcis:xsd:1"
+	xmlns:p="http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	creationDate="2005-07-11T11:30:47.0Z" schemaVersion="1.2">
+	<EPCISHeader>
+		<p:StandardBusinessDocumentHeader>
+			<!-- Required -->
+			<p:HeaderVersion>1.2</p:HeaderVersion>
+			<p:Sender>
+				<p:Identifier Authority="">p:Identifier</p:Identifier>
+			</p:Sender>
+			<p:Receiver>
+				<p:Identifier Authority="">p:Identifier</p:Identifier>
+			</p:Receiver>
+			<p:DocumentIdentification>
+				<!-- Required -->
+				<p:Standard>EPCglobal</p:Standard>
+				<!-- Required -->
+				<p:TypeVersion>1.2</p:TypeVersion>
+				<p:InstanceIdentifier>p:InstanceIdentifier</p:InstanceIdentifier>
+				<!-- Required -->
+				<p:Type>MasterData</p:Type>
+				<p:MultipleType>true</p:MultipleType>
+				<p:CreationDateAndTime>2016-12-31T12:00:00</p:CreationDateAndTime>
+			</p:DocumentIdentification>
+		</p:StandardBusinessDocumentHeader>
+		<extension>
+			<EPCISMasterData>
+				<VocabularyList>
+					<Vocabulary type="urn:epcglobal:epcis:vtype:ParkingSpace">
+						<VocabularyElementList>
+							<VocabularyElement id="urn:epc:id:sgln:0037000.00729.8000">
+								<attribute id="http://epcis.example.com/airport/name">cheongju airport</attribute>
+								<attribute id="http://epcis.example.com/airport/address">청주시 국제공항 2호선</attribute>
+								<attribute id="http://epcis.example.com/airport/max_capacity">100</attribute>
+							</VocabularyElement>
+						</VocabularyElementList>
+					</Vocabulary>
+				</VocabularyList>
+			</EPCISMasterData>
+		</extension>
+	</EPCISHeader>
+	<EPCISBody>
+		<EventList>
+		</EventList>
+	</EPCISBody>
+</epcis:EPCISDocument>
+
